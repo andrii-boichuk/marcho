@@ -25,16 +25,16 @@
       color: $title-color;
       padding-bottom: 1px;
       transition: all 0.3s;
-      @extend %quicksand-400;
+      @extend %roboto-400;
       &:hover {
         color: $accent-color;
         border-bottom: 1px solid $accent-color;
-        @extend %quicksand-500;
+        @extend %roboto-700;
       }
       &--active {
         color: $accent-color;
         border-bottom: 1px solid $accent-color;
-        @extend %quicksand-500;
+        @extend %roboto-700;
       }
     }
   }
