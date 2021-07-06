@@ -5,5 +5,15 @@ $(function () {
 		fade: true,
 		autoplay: true,
 		autoplaySpeed: 2000
-	})
+	});
+
+	// $('[data-fancybox]').fancybox({
+	// 	youtube: {
+	// 		controls: 0,
+	// 		showinfo: 0,
+	// 	},
+	// 	vimeo: {
+	// 		color: 'f00',
+	// 	}
+	// });
 })

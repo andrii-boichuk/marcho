@@ -23,7 +23,7 @@ function styles() {
 		.pipe(concat('style.min.css'))
 		.pipe(autoprefixer({
 			overrideBrowserslist: ['last 10 versions'],
-			grid: true
+			grid: true,
 		}))
 		.pipe(dest('app/css'))
 		.pipe(browserSync.stream())
@@ -32,6 +32,7 @@ function styles() {
 function scripts() {
 	return src([
 		'node_modules/jquery/dist/jquery.js',
+		'node_modules/@fancyapps/ui/src/Fancybox/Fancybox.js',
 		'node_modules/slick-carousel/slick/slick.js',
 		'app/js/main.js'
 	])
