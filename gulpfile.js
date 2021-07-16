@@ -1,6 +1,6 @@
 const { src, dest, watch, parallel, series } = require('gulp');
 
-const scss = require('gulp-sass');
+const scss = require('gulp-sass')(require('sass'));
 const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
 const uglify = require('gulp-uglify');
@@ -32,9 +32,10 @@ function styles() {
 function scripts() {
 	return src([
 		'node_modules/jquery/dist/jquery.js',
-		'node_modules/@fancyapps/ui/src/Fancybox/Fancybox.js',
+		'node_modules/rateyo/src/jquery.rateyo.js',
 		'node_modules/slick-carousel/slick/slick.js',
-		'app/js/main.js'
+		// 'node_modules/@fancyapps/ui/src/index.js',
+		'app/js/main.js',
 	])
 		.pipe(concat('main.min.js'))
 		.pipe(uglify())
