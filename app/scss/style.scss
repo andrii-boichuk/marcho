@@ -132,10 +132,14 @@
   &__text {
     margin-bottom: 25px;
   }
+  &__form{
+    display: flex;
+  }
   &__form-input {
     background-color: #fff;
     max-width: 320px;
     width: 100%;
+    margin-right: 3px;
     border: none;
     padding: 12px 10px 12px 15px;
     box-shadow: 0px 7px 20px 0px rgba(192, 192, 192, 0.3);
@@ -1856,7 +1860,6 @@
     max-width: 370px;
     margin-right: 30px;
     &-title{
-      // letter-spacing: 0;
       font-size: 48px;
       line-height: 58px;
       @extend %roboto-700;
@@ -1901,8 +1904,10 @@
         top: 15px;
         background-image: url('../images/icons/contact-email.png');
       }
+
     }
-    &-phone{
+    &-phone,
+    &-email{
       display: block;
       color: $title-color;
     }
