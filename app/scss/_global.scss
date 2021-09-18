@@ -61,6 +61,7 @@ a {
   }
   &__list {
     display: flex;
+    flex-wrap: wrap;
   }
   &__item {
     color: #727272;
@@ -141,5 +142,17 @@ a {
   }
   &__link--active {
     color: $accent-color;
+  }
+}
+@media (max-width: 375) {
+  .title {
+    font-size: 48px;
+    line-height: 52px;
+  }
+}
+@media (max-width: 620) {
+  .title {
+    font-size: 32px;
+    line-height: 40;
   }
 }

@@ -7,3 +7,24 @@
     height: 170px;
   }
 }
+
+@media (max-width: 620px) {
+  .partners {
+    &__list {
+      flex-wrap: wrap;
+      justify-content: center;
+      height: auto;
+      padding-bottom: 60px 0;
+    }
+    &__item{
+      margin: 10px 35px;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .partners {
+    &__item{
+      margin: 10px 25px;
+    }
+  }
+}
